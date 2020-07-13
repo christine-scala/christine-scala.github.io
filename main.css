@@ -64,4 +64,16 @@
     background: #5f2525 linear-gradient(#d85863, #4b2020) repeat-x;
     border-color: #0f0e0e;
     text-decoration: none;
+
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #4b2020;
+  padding-top: 2px;
+  padding-bottom: 2px;
+
 }

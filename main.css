@@ -1,79 +1,101 @@
 .grid {
-  display: grid;
-  grid-template: 100% /200px 1fr 200px;
+    display: grid;
+    grid-template: 100% /200px 1fr 200px;
+}
+
+/* added */
+.grid div {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTqA6qUv_-m98KkR_2Q-xONUnkMg3zHrDgZUA&usqp=CAU");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #name {
-  font-size: 200%;
-  text-shadow: 2px 2px #5c4f4f;
-  text-align: center;
-  vertical-align: middle;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 25px;
-  padding: 90px 12px;
-  left: 10px;
-  top: 0px;
-  background-color: rgb(12, 11, 11);
-  color: rgb(145, 154, 235);
+    font-size: 200%;
+    text-shadow: 2px 2px #5c4f4f;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /* removed */
+    /* margin-left: 25px; */
+    /* padding: 90px 12px; */
+    left: 10px;
+    top: 0px;
+    background-color: rgb(12, 11, 11);
+    color: rgb(145, 154, 235);
 }
-  
- /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .start {
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    /* removed */
+    /* .start {
       flex: 100%;
       max-width: 100%;
-      }
-    
-  }
+      } */
 
-  .Bio{
+    /* added */
+    .grid {
+        grid-template-columns: 3fr 1fr 3fr;
+    }
+
+    /* added */
+    .grid div {
+        height: 75px;
+    }
+
+    /* added */
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.Bio {
     display: inline-block;
     border-radius: 3px;
     padding: 7px 12px;
-    border: 1px solid #D5D5D5;
+    border: 1px solid #d5d5d5;
     background-image: linear-gradient(rgb(168, 80, 80), rgb(90, 29, 29));
     font: 700 13px/18px Helvetica, arial;
-    
-  }
+}
 
-  .portfolio {
+.portfolio {
     border: 1px solid black;
     padding: 7px 12px;
     text-align: center;
-    
 }
 
-  .button {
+.button {
     display: inline-block;
     border-radius: 3px;
     padding: 7px 12px;
-    border: 1px solid #D5D5D5;
-    background-image: linear-gradient(#EEE, #DDD);
+    border: 1px solid #d5d5d5;
+    background-image: linear-gradient(#eee, #ddd);
     font: 700 13px/18px Helvetica, arial;
-  }
+}
 
-  .button--links-Git {
-    color: #FFF;
+.button--links-Git {
+    color: #fff;
     background: #5f2525 linear-gradient(#d85863, #4b2020) repeat-x;
     border-color: #0f0e0e;
     text-decoration: none;
 }
 .button--links-LinkedIn {
-    color: #FFF;
+    color: #fff;
     background: #5f2525 linear-gradient(#d85863, #4b2020) repeat-x;
     border-color: #0f0e0e;
     text-decoration: none;
-
 }
 
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #4b2020;
-  padding-top: 2px;
-  padding-bottom: 2px;
-
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #4b2020;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }

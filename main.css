@@ -9,7 +9,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
+}    
 
 #name {
     font-size: 200%;
@@ -20,7 +20,7 @@
     margin-bottom: 0px;
     /* removed */
     /* margin-left: 25px; */
-    /* padding: 90px 12px; */
+    padding: 90px 12px; 
     left: 10px;
     top: 0px;
     background-color: rgb(12, 11, 11);
